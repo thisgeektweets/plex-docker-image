@@ -17,7 +17,7 @@ RUN \
 	dbus \
     curl \
     udev \
-    cifs-utils \
+    htop \
 	wget && \
 
 # install plex
