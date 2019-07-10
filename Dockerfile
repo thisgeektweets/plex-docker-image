@@ -24,10 +24,7 @@ RUN \
  curl -o \
 	/tmp/plexmediaserver.deb -L \
 	"${PLEX_INSTALL}" && \
- dpkg -i /tmp/plexmediaserver.deb && \
-
-# change root home folder to fix plex hanging at runtime with usermod
-#usermod -d /app root && \
+ dpkg -i /tmp/plexmediaserver.deb &&
 
 # cleanup
  apt-get clean && \

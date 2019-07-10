@@ -1,4 +1,8 @@
 #!/bin/bash
   ls /mnt/media
-  #cd /usr/lib/plexmediaserver && exec ./Plex\ Media\ Server
-  htop
+if [ "$1" == "run" ]; then
+  rm -f /config/plexmediaserver.pid
+  cd /usr/lib/plexmediaserver && exec ./Plex\ Media\ Server
+else
+  exec "$@"
+fi
