@@ -1,3 +1,3 @@
 #!/bin/bash
   ls /mnt/media
-  cd /usr/lib/plexmediaserver && exec ./Plex\ Media\ Server
+  #cd /usr/lib/plexmediaserver && exec ./Plex\ Media\ Server
