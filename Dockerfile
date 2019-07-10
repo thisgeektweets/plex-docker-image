@@ -24,7 +24,7 @@ RUN \
  curl -o \
 	/tmp/plexmediaserver.deb -L \
 	"${PLEX_INSTALL}" && \
- dpkg -i /tmp/plexmediaserver.deb &&
+ dpkg -i /tmp/plexmediaserver.deb && \
 
 # cleanup
  apt-get clean && \
